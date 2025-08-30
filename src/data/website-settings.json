@@ -1,0 +1,24 @@
+{
+  "heroTitle": "Build Discipline, Confidence, and Fitness with Excellent Taekwondo",
+  "heroSubtitle": "All ages and skill levels welcome. Join our supportive community and start your journey today.",
+  "primaryButtonText": "Book a Free Trial",
+  "secondaryButtonText": "View Programs",
+  "features": [
+    "Discipline",
+    "Confidence",
+    "Fitness"
+  ],
+  "featureDescriptions": [
+    "Practical skills and character development through structured training.",
+    "Build self-assurance and mental strength.",
+    "Improve physical conditioning and flexibility."
+  ],
+  "buttonPadding": "px-6 py-3",
+  "buttonMargin": "mt-8",
+  "sectionPadding": "py-16",
+  "containerMaxWidth": "max-w-7xl",
+  "primaryColor": "#2563eb",
+  "secondaryColor": "#1e40af",
+  "textColor": "#1f2937",
+  "backgroundColor": "#ffffff"
+}

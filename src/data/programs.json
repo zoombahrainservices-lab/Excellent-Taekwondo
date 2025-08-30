@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Little Dragons",
+    "ageRange": "4-6",
+    "days": ["Mon", "Wed", "Fri"],
+    "time": "4:00 PM - 4:45 PM",
+    "level": "Kids",
+    "blurb": "Fun, movement, and martial arts basics to build focus and confidence."
+  },
+  {
+    "id": 2,
+    "name": "Juniors Taekwondo",
+    "ageRange": "7-12",
+    "days": ["Tue", "Thu", "Sat"],
+    "time": "5:00 PM - 6:00 PM",
+    "level": "Kids",
+    "blurb": "Structured training in forms, sparring fundamentals, and discipline."
+  },
+  {
+    "id": 3,
+    "name": "Teens & Adults",
+    "ageRange": "13+",
+    "days": ["Mon", "Wed"],
+    "time": "6:30 PM - 7:30 PM",
+    "level": "Teens",
+    "blurb": "High-energy class developing strength, flexibility, and self-defense."
+  },
+  {
+    "id": 4,
+    "name": "Adults Fitness TKD",
+    "ageRange": "18+",
+    "days": ["Tue", "Thu"],
+    "time": "7:30 PM - 8:30 PM",
+    "level": "Adults",
+    "blurb": "Cardio kick, forms, and pad work for overall fitness and stress relief."
+  },
+  {
+    "id": 5,
+    "name": "Black Belt Prep",
+    "ageRange": "13+",
+    "days": ["Sat"],
+    "time": "10:00 AM - 12:00 PM",
+    "level": "Black Belt",
+    "blurb": "Advanced curriculum, leadership, and testing preparation."
+  }
+]
+
+
+

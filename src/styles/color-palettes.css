@@ -1,0 +1,165 @@
+/* ===========================================
+   TAEKWONDO WEBSITE COLOR PALETTE OPTIONS
+   =========================================== */
+
+/* Option 1: Classic & Powerful (Traditional Taekwondo) */
+.palette-classic {
+  --primary: #E53935;        /* Bold Red - Power & Strength */
+  --secondary: #FFC107;      /* Gold - Excellence & Achievement */
+  --background: #FFFFFF;     /* Pure White - Clean & Professional */
+  --surface: #F5F5F5;       /* Light Gray - Subtle Backgrounds */
+  --text-primary: #111111;   /* Black - Strong Typography */
+  --text-secondary: #666666; /* Medium Gray - Supporting Text */
+  --accent: #E53935;         /* Red Accent */
+  --success: #4CAF50;
+  --warning: #FF9800;
+  --error: #F44336;
+}
+
+/* Option 2: Modern & Energetic (Sporty & Youthful) */
+.palette-modern {
+  --primary: #007BFF;        /* Electric Blue - Energy & Motion */
+  --secondary: #00E676;      /* Neon Lime - Vitality & Growth */
+  --accent: #FF3B3F;        /* Crimson Red - Passion & Intensity */
+  --background: #FAFAFA;     /* Off-White - Modern & Clean */
+  --surface: #FFFFFF;       /* Pure White - Cards & Elements */
+  --text-primary: #222222;   /* Dark Charcoal - Modern Typography */
+  --text-secondary: #555555; /* Medium Gray - Supporting Text */
+  --success: #00E676;
+  --warning: #FFC107;
+  --error: #FF3B3F;
+}
+
+/* Option 3: Premium & Minimalist (Elite & High-End) */
+.palette-premium {
+  --primary: #D72638;        /* Crimson - Luxury & Power */
+  --secondary: #FFD700;      /* Gold - Premium & Excellence */
+  --accent: #0D1B2A;        /* Deep Navy - Sophistication */
+  --background: #FFFFFF;     /* Pure White - Luxury & Space */
+  --surface: #2F3E46;       /* Slate Gray - Premium Elements */
+  --text-primary: #0D1B2A;   /* Deep Navy - Elegant Typography */
+  --text-secondary: #2F3E46; /* Slate Gray - Supporting Text */
+  --success: #28A745;
+  --warning: #FFD700;
+  --error: #D72638;
+}
+
+/* ===========================================
+   COMPONENT EXAMPLES FOR EACH PALETTE
+   =========================================== */
+
+/* Hero Section Styles */
+.hero-classic {
+  background: linear-gradient(135deg, var(--background) 0%, var(--surface) 100%);
+  color: var(--text-primary);
+}
+
+.hero-modern {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  color: var(--background);
+}
+
+.hero-premium {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--surface) 100%);
+  color: var(--background);
+}
+
+/* Button Styles */
+.btn-primary-classic {
+  background: var(--primary);
+  color: var(--background);
+  border: 2px solid var(--primary);
+}
+
+.btn-secondary-classic {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-primary-modern {
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+  color: var(--background);
+  border: none;
+}
+
+.btn-secondary-modern {
+  background: var(--secondary);
+  color: var(--text-primary);
+  border: 2px solid var(--secondary);
+}
+
+.btn-primary-premium {
+  background: var(--primary);
+  color: var(--background);
+  border: 1px solid var(--primary);
+  box-shadow: 0 4px 15px rgba(215, 38, 56, 0.3);
+}
+
+.btn-secondary-premium {
+  background: var(--secondary);
+  color: var(--accent);
+  border: 1px solid var(--secondary);
+}
+
+/* Card Styles */
+.card-classic {
+  background: var(--background);
+  border: 1px solid var(--surface);
+  box-shadow: 0 2px 8px rgba(17, 17, 17, 0.1);
+}
+
+.card-modern {
+  background: var(--surface);
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.15);
+}
+
+.card-premium {
+  background: var(--background);
+  border: 1px solid rgba(47, 62, 70, 0.1);
+  box-shadow: 0 8px 30px rgba(13, 27, 42, 0.1);
+}
+
+/* Navigation Styles */
+.nav-classic {
+  background: var(--surface);
+  border-bottom: 1px solid var(--primary);
+}
+
+.nav-modern {
+  background: rgba(250, 250, 250, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.nav-premium {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(13, 27, 42, 0.1);
+}
+
+/* ===========================================
+   USAGE RECOMMENDATIONS
+   =========================================== */
+
+/*
+OPTION 1 - CLASSIC & POWERFUL
+✅ Best for: Traditional dojos, serious martial artists, established schools
+✅ Conveys: Authority, tradition, strength, discipline
+✅ Target audience: Adults, traditional martial arts enthusiasts
+✅ Use when: You want to emphasize heritage and classical values
+
+OPTION 2 - MODERN & ENERGETIC  
+✅ Best for: Youth programs, fitness-focused classes, modern studios
+✅ Conveys: Energy, innovation, fun, approachability
+✅ Target audience: Young adults, fitness enthusiasts, beginners
+✅ Use when: You want to attract a younger, more casual audience
+
+OPTION 3 - PREMIUM & MINIMALIST
+✅ Best for: High-end studios, elite training, luxury experiences
+✅ Conveys: Excellence, sophistication, exclusivity, professionalism
+✅ Target audience: Affluent clients, serious competitors, premium market
+✅ Use when: You want to position as a premium, exclusive service
+*/
+
+

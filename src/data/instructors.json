@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "name": "Faisal MM",
+    "role": "Head Instructor",
+    "bio": "5th Dan Black Belt with 20+ years of teaching. Passionate about character and excellence.",
+    "belts": ["1st Dan", "2nd Dan", "3rd Dan", "4th Dan", "5th Dan"],
+    "photo": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "Mohamed Yoosaf MV",
+    "role": "Sparring Coach",
+    "bio": "National-level competitor focusing on safe and effective sparring techniques.",
+    "belts": ["Black Belt"],
+    "photo": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=800&auto=format&fit=crop"
+  }
+]
+
+
+

@@ -1,13 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFFFF; /* Pure White - Clean & Luxurious */
+  --foreground: #0D1B2A; /* Deep Navy - Sophisticated Typography */
+  --primary: #D72638; /* Crimson - Luxury & Power */
+  --secondary: #FFD700; /* Gold - Premium & Excellence */
+  --accent: #FFD700; /* Gold - Luxury Accent */
+  --dark: #0D1B2A; /* Deep Navy - Sophisticated */
+  --surface: #2F3E46; /* Slate Gray - Premium Elements */
+  --text-secondary: #2F3E46; /* Slate Gray - Supporting Text */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-dark: var(--dark);
+  --color-accent: var(--accent);
+  --color-surface: var(--surface);
+  --font-heading: Oswald, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -22,5 +34,240 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center rounded-md px-5 py-3 text-sm font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+}
+.btn-primary {
+  @apply bg-primary text-white hover:opacity-90 focus-visible:ring-primary;
+}
+.btn-outline {
+  @apply border border-dark text-dark hover:bg-dark hover:text-white focus-visible:ring-dark;
+}
+.btn-secondary {
+  @apply bg-secondary text-dark hover:bg-secondary/90 focus-visible:ring-secondary;
+}
+.btn-gold {
+  @apply bg-accent text-dark hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/25 hover:scale-105 focus-visible:ring-accent border border-accent;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.btn-gold:hover {
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.4), 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.btn-premium {
+  @apply bg-gradient-to-r from-primary to-accent text-white hover:shadow-lg hover:shadow-primary/25 hover:scale-105 focus-visible:ring-primary;
+  box-shadow: 0 0 15px rgba(215, 38, 56, 0.2);
+  transition: all 0.3s ease;
+}
+.btn-premium:hover {
+  box-shadow: 0 0 25px rgba(215, 38, 56, 0.4), 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Utilities */
+.container-max {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.animation-delay-500 {
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.animation-delay-700 {
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.3s ease-out forwards;
+}
+
+/* Focus styles for better accessibility */
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Smooth focus transitions */
+* {
+  transition: outline 0.2s ease;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .btn {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Custom Cursor with Inner Dot */
+.custom-cursor {
+  position: fixed;
+  border: 1px solid rgba(255, 255, 255, 0.8); /* Thin white border like the image */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999999 !important;
+  background-color: transparent; /* No background, just the outline */
+  transition: width 0.3s ease-out, height 0.3s ease-out, opacity 0.3s ease-out, left 0.1s ease-out, top 0.1s ease-out;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Inner dot that moves to the edge */
+.inner-dot {
+  width: 4px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 1); /* Solid white dot */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.4s ease-out;
+  box-shadow: none; /* No shadow for clean look */
+}
+
+/* Show cursor when visible */
+.custom-cursor.visible {
+  opacity: 1;
+}
+
+/* Hide cursor when over clickable elements */
+.custom-cursor.pointer {
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+/* Keep normal cursor visible */
+body {
+  cursor: auto;
+}
+
+/* Enhanced cursor for clickable elements */
+button, a, [role="button"], .btn, input[type="submit"], input[type="button"] {
+  cursor: pointer !important;
+}
+
+/* Text cursor for form elements */
+input, textarea, select, [contenteditable] {
+  cursor: text !important;
+}
+
+/* We need to remove this custom cursor in mobile devices */
+@media screen and (max-width: 768px) {
+  .custom-cursor {
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
+  }
+  
+  .inner-dot {
+    display: none !important;
+  }
+  
+  body {
+    cursor: auto !important;
+  }
+  
+  input, textarea, select, [contenteditable] {
+    cursor: text !important;
+  }
+}
+
+/* Legacy flare class for backward compatibility */
+.flare {
+  position: fixed;
+  border: 2px solid #ffffff2b;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999999 !important;
+  backdrop-filter: blur(1px);
+  background-color: #0000005e;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.flare.pointer {
+  opacity: 0 !important;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
