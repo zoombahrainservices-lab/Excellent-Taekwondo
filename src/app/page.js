@@ -262,7 +262,7 @@ function UpcomingSessions({ sessions }) {
       {/* Quick Actions */}
       <div className="mt-12 text-center">
         <div className="bg-gradient-to-r from-slate-50 to-slate-100 rounded-2xl p-8 border border-slate-200">
-          <h3 className="text-xl font-bold text-dark mb-3">Don't see a suitable time?</h3>
+          <h3 className="text-xl font-bold text-dark mb-3">Don&apos;t see a suitable time?</h3>
           <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
             We offer flexible scheduling and private sessions. Contact us to discuss custom training times that work for you.
           </p>
@@ -647,7 +647,7 @@ function TestimonialsSlider() {
           
           <div className="w-full relative z-10">
             {/* Quote icon */}
-            <div className="text-6xl text-primary/20 mb-6 font-serif">"</div>
+            <div className="text-6xl text-primary/20 mb-6 font-serif">&quot;</div>
             
             {/* Testimonial content with smooth transitions */}
             <div className="transition-all duration-500 ease-in-out">
